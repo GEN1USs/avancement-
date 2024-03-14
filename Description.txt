@@ -1,0 +1,31 @@
+>>>> Model Building:
+
+        * Loads the pre-trained model without its top classification layer.
+
+        * Adds a new classification head with a Global Average Pooling layer followed by Dense layers.
+
+        * Creates the full model and compiles it using an optimizer and binary cross-entropy loss.
+
+>>>> Data Preparation:
+
+        * Defines paths to the train, validation, and test data directories.
+
+        * Sets image dimensions and defines data augmentation strategies for training and validation data using ImageDataGenerator.
+
+        * Creates data generators for training, validation, and test data.
+
+>>>> Model Training:
+
+        * Fits the model to the training data using the fit method, specifying the training and validation data generators.
+
+>>>> Model Evaluation:
+
+        * Evaluates the trained model on the test data using the evaluate method and prints the test accuracy.
+
+>>>> Confusion Matrix Visualization:
+
+        * Generates predictions on the test data and calculates the confusion matrix.
+
+        * Visualizes the confusion matrix using matplotlib.
+
+        * Calculates and prints sensitivity (true positive rate) and specificity (true negative rate) from the confusion matrix.
